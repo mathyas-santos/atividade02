@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Minha loja</title>
+        <meta charset="UTF-8"> 
+        <style >
+            #fundo{
+                background-color: #adb5bd;
+                align-items: center;
+            }
+
+            #form{
+                font-size: larger ;
+
+            }
+
+            .menu-toggle{
+                display: none;
+                font-size: 30px;
+                color: var(--white);
+                cursor: pointer;
+  
+            }
+
+
+           
+
+
+        </style>
+    </head>
+    <body id="fundo">
+        <header>
+            <h1 style="background-color:#6c757d;">Minha loja</h1>
+            <h2>Aba de navegação</h2>
+            <div class="menu-toggle" onclick="toggleMenu()" id="menu">☰</div>
+           
+            <p>Bem-vindo à minha loja, onde estilo e personalidade caminham lado a lado. Nossa missão é oferecer peças que vão além da tendência: aqui, cada coleção é pensada para valorizar sua essência, com conforto, qualidade e aquele toque único que faz você se sentir bem. Seja para o dia a dia ou ocasiões especiais, temos o look ideal para expressar quem você realmente é.
+             </p>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html" onclick="closeMenu">Home</a></li>
+                <li><a href="#Contato" onclick="closeMenu">Contato</a></li>
+                <li><a href="#login" onclick="closeMenu">Login</a></li>
+                <li><a href="#midia">Mídia</a></li>
+                <li><a href="#avaliações">Avaliações</a></li>
+            </ul>
+        </nav>
+
+        <section id="login">
+
+            <h2>Faça login para comprar</h2>
+      
+            <form action="" id="form" >
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Insira seu email" required>
+                </div>
+                <div>
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" placeholder="Minimo de 8 digitos" required minlength="8">
+                </div>
+                <br>
+                <div><input type="submit" value="Enviar"></div>
+            </form>
+            <br>
+    
+        </section>
+        <main>
+            <article>
+                <h2>Nossos benefícios</h2>
+                <p>Na minha, você encontra muito mais do que roupas: oferecemos uma experiência completa de moda. Nossas peças são cuidadosamente selecionadas para garantir qualidade, conforto e estilo em cada detalhe. Trabalhamos com lançamentos frequentes, atendimento personalizado e condições especiais de pagamento, tudo para facilitar sua vida e valorizar o seu visual. Além disso, nosso ambiente acolhedor — tanto na loja física quanto online — foi pensado para que você se sinta à vontade e confiante em cada escolha.</p>
+
+                text
+        <section id="midia" >
+            <h2>Mídia</h2>
+            <p>Além de nossos produtos você podera encotrar musicas que podem comor sua playlist de rock</p>
+            <h3>Nossos produtos</h3>
+            <div>
+                <video src="arquivos/propaganda1.mp4" controls width="320" height="480" id="video1"> </video>
+                
+                <br>
+                <video src="arquivos/propaganda2.mp4" controls width="380" height="440" id="video2"></video>
+            </div>
+
+            <h3>Musicas</h3>
+            <div>
+                <audio src="arquivos/audio ppg1.mpeg" id="audio1" controls></audio>
+                <audio src="arquivos/audio.ppg2.mpeg" id="audio2" controls></audio>
+            </div>
+
+            </article>
+            <section id="Contato">
+                <h3>Contato</h3>
+                <ul>
+                    <strong>
+                        <li>whatsApp</li>
+                        <li>Instagram</li>
+                        <li>(xx) x xxxx-xxxx</li>
+                    </strong>
+                </ul>
+            </section>
+             <br>
+        <section id="avaliações">
+            <h3>Avaliações</h3>
+            <form action="" id="form">
+                <label for="mensagem" for="avaliação"></label>
+                <textarea name="mensagem" id="mensagem"></textarea>
+                <br>
+                <input type="reset" value="Apagar" >
+                <button type="submit" id="avaliação">Enviar</button>
+              </form>
+        </section>
+
+        </main>
+        <br>
+        
+
+    </body>
+</html>
